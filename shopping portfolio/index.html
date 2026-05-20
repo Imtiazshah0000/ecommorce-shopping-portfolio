@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Fashion | Premium Luxury Shopping</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Preloader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="luxury-loader"></div>
+            <h1 class="loader-text" style="margin-top: 20px; font-weight: 700;">LUMINA<span>FASHION</span></h1>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="container">
+            <a href="index.html" class="logo">LUMINA<span>FASHION</span></a>
+            <ul class="nav-links">
+                <li><a href="men-fashion.html">Men</a></li>
+                <li><a href="jewellery.html">Jewellery</a></li>
+                <li><a href="kids-fashion.html">Kids</a></li>
+                <li><a href="ladies-cosmetics.html">Cosmetics</a></li>
+                <li><a href="ladies-fashion.html">Ladies</a></li>
+                <li><a href="shoes-accessories.html">Accessories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn" id="cart-toggle">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Cart -->
+    <div class="cart-sidebar glass" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <button id="close-cart"><i data-lucide="x"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-list">
+            <p class="empty-msg">Your luxury bag is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total">
+                <span>Subtotal:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-btn neon-btn">Reserve Now</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero next-level-hero">
+            <div class="hero-video-container">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=2000" alt="Luxury Fashion" class="hero-fallback">
+                <div class="hero-overlay" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), var(--bg-dark));"></div>
+            </div>
+            
+            <div class="container hero-content text-center">
+                <div class="hero-tag" data-aos="fade-down">International Luxury Brand</div>
+                <h1 class="hero-title cinematic-text" data-aos="zoom-out" data-aos-delay="200">
+                    Lumina <span class="neon-text italic">Fashion</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">Experience the pinnacle of elegance and modern style.</p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#collections" class="btn btn-primary neon-btn">Explore Collections</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Grid -->
+        <section id="collections" class="collections section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Our <span class="neon-text">Collections</span></h2>
+                    <p>Curated excellence for every lifestyle.</p>
+                </div>
+                
+                <div class="collection-grid">
+                    <!-- Men's Clothing -->
+                    <div class="collection-item large" data-aos="fade-right">
+                        <img src="https://images.unsplash.com/photo-1550246140-29f40b909e5a?auto=format&fit=crop&q=80&w=1000" alt="Men's Fashion" onerror="handleImageError(this)">
+                        <div class="item-overlay glass">
+                            <h3>Men's Clothing</h3>
+                            <p>Premium luxury masculine fashion.</p>
+                            <a href="men-fashion.html" class="shop-link">Explore <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="collection-stack">
+                        <!-- Jewellery -->
+                        <div class="collection-item" data-aos="fade-left">
+                            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800" alt="Jewellery" onerror="handleImageError(this)">
+                            <div class="item-overlay glass">
+                                <h3>Luxury Jewellery</h3>
+                                <a href="jewellery.html" class="shop-link">Explore <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Kids Fashion -->
+                        <div class="collection-item" data-aos="fade-left" data-aos-delay="100">
+                            <img src="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&fit=crop&q=80&w=800" alt="Kids Fashion" onerror="handleImageError(this)">
+                            <div class="item-overlay glass">
+                                <h3>Kids Fashion</h3>
+                                <a href="kids-fashion.html" class="shop-link">Explore <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-grid" style="margin-top: 30px;">
+                    <div class="collection-stack">
+                        <!-- Ladies Cosmetics -->
+                        <div class="collection-item" data-aos="fade-right">
+                            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800" alt="Cosmetics" onerror="handleImageError(this)">
+                            <div class="item-overlay glass">
+                                <h3>Ladies Cosmetics</h3>
+                                <a href="ladies-cosmetics.html" class="shop-link">Explore <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Shoes & Accessories -->
+                        <div class="collection-item" data-aos="fade-right" data-aos-delay="100">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=800" alt="Accessories" onerror="handleImageError(this)">
+                            <div class="item-overlay glass">
+                                <h3>Shoes & Accessories</h3>
+                                <a href="shoes-accessories.html" class="shop-link">Explore <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ladies Clothing -->
+                    <div class="collection-item large" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=1000" alt="Ladies Fashion" onerror="handleImageError(this)">
+                        <div class="item-overlay glass">
+                            <h3>Ladies Clothing</h3>
+                            <p>Elegant and modern dresses.</p>
+                            <a href="ladies-fashion.html" class="shop-link">Explore <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats & Reviews -->
+        <section class="reviews section-padding glass">
+            <div class="container">
+                <div class="stats-row" data-aos="fade-up">
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="500">500+</h3>
+                        <p>Luxury Items</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="12">12</h3>
+                        <p>Global Boutiques</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="50">50K+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-premium section-padding">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">LUMINA<span>FASHION</span></a>
+                    <p>Redefining luxury shopping through innovation and elegance.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="men-fashion.html">Men's Fashion</a></li>
+                        <li><a href="ladies-fashion.html">Ladies Fashion</a></li>
+                        <li><a href="jewellery.html">Jewellery</a></li>
+                        <li><a href="ladies-cosmetics.html">Cosmetics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Concierge</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <div class="luxury-input">
+                        <input type="email" placeholder="Your Email">
+                        <button><i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center" style="margin-top: 50px; color: #888888;">
+                <p>&copy; 2026 LUMINA FASHION. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladies Fashion | Lumina Fashion</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Preloader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="luxury-loader"></div>
+            <h1 class="loader-text" style="margin-top: 20px; font-weight: 700;">LUMINA<span>FASHION</span></h1>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="container">
+            <a href="index.html" class="logo">LUMINA<span>FASHION</span></a>
+            <ul class="nav-links">
+                <li><a href="men-fashion.html">Men</a></li>
+                <li><a href="jewellery.html">Jewellery</a></li>
+                <li><a href="kids-fashion.html">Kids</a></li>
+                <li><a href="ladies-cosmetics.html">Cosmetics</a></li>
+                <li><a href="ladies-fashion.html" class="active">Ladies</a></li>
+                <li><a href="shoes-accessories.html">Accessories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn" id="cart-toggle">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Category Hero -->
+        <section class="next-level-hero" style="height: 70vh;">
+            <div class="hero-video-container">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=2000" alt="Ladies Fashion" class="hero-fallback">
+                <div class="hero-overlay" style="background: radial-gradient(circle at center, rgba(0,0,0,0.2) 0%, var(--bg-dark) 100%);"></div>
+            </div>
+            <div class="container hero-content text-center">
+                <div class="hero-tag" data-aos="fade-down">Timeless Grace</div>
+                <h1 class="hero-title cinematic-text" data-aos="zoom-out" data-aos-delay="200">
+                    Ladies <span class="neon-text">Clothing</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">Elegant and trendy couture for every occasion.</p>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="premium-grid">
+                    <!-- Product 1 -->
+                    <div class="premium-card" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=600" alt="Silk Evening Gown" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Couture</span>
+                            <h4>Silk Evening Gown</h4>
+                            <div class="price-row">
+                                <span class="price">$1,200.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--neon-pink);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=600" alt="Starlight Cocktail Dress" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Evening</span>
+                            <h4>Starlight Cocktail Dress</h4>
+                            <div class="price-row">
+                                <span class="price">$850.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--neon-pink);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=600" alt="Ethereal Summer Set" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Summer</span>
+                            <h4>Ethereal Summer Set</h4>
+                            <div class="price-row">
+                                <span class="price">$450.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--neon-pink);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="premium-card" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?auto=format&fit=crop&q=80&w=600" alt="Designer Trench Coat" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Outerwear</span>
+                            <h4>Designer Trench Coat</h4>
+                            <div class="price-row">
+                                <span class="price">$520.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--neon-pink);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&q=80&w=600" alt="Cashmere Wrap Shawl" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Winter</span>
+                            <h4>Cashmere Wrap Shawl</h4>
+                            <div class="price-row">
+                                <span class="price">$320.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--neon-pink);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=600" alt="Modern Blazer" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Formal</span>
+                            <h4>Modern Blazer</h4>
+                            <div class="price-row">
+                                <span class="price">$280.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--neon-pink);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=600" alt="Stiletto Heels" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Footwear</span>
+                            <h4>Stiletto Heels</h4>
+                            <div class="price-row">
+                                <span class="price">$350.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--neon-pink);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section class="lifestyle-banners">
+            <div class="lifestyle-item" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=1000" alt="Ladies Lifestyle">
+                <div class="banner-content">
+                    <h2 class="cinematic-text">Chic <span class="neon-text">Elegance</span></h2>
+                    <p>Redefining your wardrobe with modern sophistication.</p>
+                </div>
+            </div>
+            <div class="lifestyle-item" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&q=80&w=1000" alt="Fashion Detail">
+                <div class="banner-content">
+                    <h2 class="cinematic-text">Couture <span class="neon-text">Dream</span></h2>
+                    <p>Experience the finest fabrics and craftsmanship.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-premium section-padding">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">LUMINA<span>FASHION</span></a>
+                    <p>Redefining luxury shopping through innovation and elegance.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="men-fashion.html">Men's Fashion</a></li>
+                        <li><a href="ladies-fashion.html">Ladies Fashion</a></li>
+                        <li><a href="jewellery.html">Jewellery</a></li>
+                        <li><a href="ladies-cosmetics.html">Cosmetics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Concierge</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <div class="luxury-input">
+                        <input type="email" placeholder="Your Email">
+                        <button><i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center" style="margin-top: 50px;">
+                <p>&copy; 2026 LUMINA FASHION. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>

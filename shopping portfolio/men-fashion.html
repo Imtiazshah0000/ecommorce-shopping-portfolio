@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion | Lumina Fashion</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="theme-men overflow-x-hidden">
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Preloader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="luxury-loader" style="border-top-color: var(--men-accent);"></div>
+            <h1 class="loader-text" style="margin-top: 20px; font-weight: 700;">LUMINA<span>FASHION</span></h1>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" style="background-color: var(--men-accent);"></div>
+    <div class="cursor-outline" style="border-color: var(--men-accent);"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="container">
+            <a href="index.html" class="logo">LUMINA<span>FASHION</span></a>
+            <ul class="nav-links">
+                <li><a href="men-fashion.html" class="active">Men</a></li>
+                <li><a href="jewellery.html">Jewellery</a></li>
+                <li><a href="kids-fashion.html">Kids</a></li>
+                <li><a href="ladies-cosmetics.html">Cosmetics</a></li>
+                <li><a href="ladies-fashion.html">Ladies</a></li>
+                <li><a href="shoes-accessories.html">Accessories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn" id="cart-toggle">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Top Feature Image -->
+        <section class="top-feature-image" data-aos="fade-down" style="width: 100%; overflow: hidden; line-height: 0;">
+            <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?auto=format&fit=crop&q=80&w=2000" alt="Men's Fashion Feature" style="width: 100%; height: 500px; object-fit: cover;">
+        </section>
+
+        <!-- Category Hero -->
+        <section class="next-level-hero" style="height: 70vh;">
+            <div class="hero-video-container">
+                <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&q=80&w=2000" alt="Men's Luxury Fashion" class="hero-fallback">
+                <div class="hero-overlay" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), var(--bg-dark));"></div>
+            </div>
+            <div class="container hero-content text-center">
+                <div class="hero-tag" data-aos="fade-down" style="color: var(--men-accent);">Modern Masculinity</div>
+                <h1 class="hero-title cinematic-text" data-aos="zoom-out" data-aos-delay="200">
+                    Men's <span class="neon-text">Clothing</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">Premium luxury for the modern gentleman.</p>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="premium-grid">
+                    <!-- Product 1 -->
+                    <div class="premium-card" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=600" alt="Urban Stealth Jacket" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Outerwear</span>
+                            <h4>Urban Stealth Jacket</h4>
+                            <div class="price-row">
+                                <span class="price">$280.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&q=80&w=600" alt="Premium Denim" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Denim</span>
+                            <h4>Premium Denim</h4>
+                            <div class="price-row">
+                                <span class="price">$120.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600" alt="Phantom Sneakers" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Footwear</span>
+                            <h4>Phantom Sneakers</h4>
+                            <div class="price-row">
+                                <span class="price">$250.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="premium-card" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=600" alt="Titan Chrono Watch" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Accessories</span>
+                            <h4>Titan Chrono Watch</h4>
+                            <div class="price-row">
+                                <span class="price">$850.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=600" alt="Midnight Hoodie" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Casual</span>
+                            <h4>Midnight Hoodie</h4>
+                            <div class="price-row">
+                                <span class="price">$140.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=600" alt="Weekend Casual Outfit" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Casual</span>
+                            <h4>Weekend Casual Outfit</h4>
+                            <div class="price-row">
+                                <span class="price">$185.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80&w=600" alt="Luxe Leather Wallet" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Accessories</span>
+                            <h4>Luxe Leather Wallet</h4>
+                            <div class="price-row">
+                                <span class="price">$120.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 10 -->
+                    <div class="premium-card" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=600" alt="Pure White Polo" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Tops</span>
+                            <h4>Pure White Polo</h4>
+                            <div class="price-row">
+                                <span class="price">$75.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 11 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580906853203-f493cea9ff28?auto=format&fit=crop&q=80&w=600" alt="Modern Tech Joggers" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Active</span>
+                            <h4>Modern Tech Joggers</h4>
+                            <div class="price-row">
+                                <span class="price">$95.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 12 -->
+                    <div class="premium-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=600" alt="Signature Leather Belt" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--men-accent);">Accessories</span>
+                            <h4>Signature Leather Belt</h4>
+                            <div class="price-row">
+                                <span class="price">$85.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--men-accent);"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section class="section-padding" style="background: rgba(255, 255, 255, 0.02);">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Style <span class="neon-text">Gallery</span></h2>
+                    <p>Inspiration for your next signature look.</p>
+                </div>
+                <div class="fashion-masonry">
+                    <div class="fashion-card h-large" data-aos="fade-up">
+                        <div class="fashion-card-inner">
+                            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f402a1?auto=format&fit=crop&q=80&w=800" alt="Formal Suit">
+                            <div class="fashion-overlay">
+                                <h4>Tailored Precision</h4>
+                                <span class="price">$550.00</span>
+                                <button class="shop-now-btn">Shop Suit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fashion-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="fashion-card-inner">
+                            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&q=80&w=800" alt="Leather Jacket">
+                            <div class="fashion-overlay">
+                                <h4>Rebel Leather</h4>
+                                <span class="price">$320.00</span>
+                                <button class="shop-now-btn">Shop Jacket</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fashion-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="fashion-card-inner">
+                            <img src="https://images.unsplash.com/photo-1516257984877-a03aae3acbc8?auto=format&fit=crop&q=80&w=800" alt="Casual Look">
+                            <div class="fashion-overlay">
+                                <h4>Casual Comfort</h4>
+                                <span class="price">$85.00</span>
+                                <button class="shop-now-btn">Shop Look</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fashion-card h-large" data-aos="fade-up" data-aos-delay="300">
+                        <div class="fashion-card-inner">
+                            <img src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?auto=format&fit=crop&q=80&w=800" alt="Business Casual">
+                            <div class="fashion-overlay">
+                                <h4>Modern Professional</h4>
+                                <span class="price">$240.00</span>
+                                <button class="shop-now-btn">Shop Look</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fashion-card" data-aos="fade-up">
+                        <div class="fashion-card-inner">
+                            <img src="https://images.unsplash.com/photo-1614676471928-2ed0ad1061a4?auto=format&fit=crop&q=80&w=800" alt="Streetwear">
+                            <div class="fashion-overlay">
+                                <h4>Urban Edge</h4>
+                                <span class="price">$110.00</span>
+                                <button class="shop-now-btn">Shop Look</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Now Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Trending <span class="neon-text">Now</span></h2>
+                    <p>The most sought-after looks of the season.</p>
+                </div>
+                <div class="premium-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="trending-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="card-img-wrapper" style="height: 500px; border-radius: 40px;">
+                            <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&q=80&w=800" alt="Model 1">
+                        </div>
+                    </div>
+                    <div class="trending-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card-img-wrapper" style="height: 500px; border-radius: 40px;">
+                            <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&q=80&w=800" alt="Model 2">
+                        </div>
+                    </div>
+                    <div class="trending-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="card-img-wrapper" style="height: 500px; border-radius: 40px;">
+                            <img src="https://images.unsplash.com/photo-1519085115972-61bb3644955b?auto=format&fit=crop&q=80&w=800" alt="Model 3">
+                        </div>
+                    </div>
+                    <div class="trending-item" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card-img-wrapper" style="height: 500px; border-radius: 40px;">
+                            <img src="https://images.unsplash.com/photo-1617122265109-2f4fe504179d?auto=format&fit=crop&q=80&w=800" alt="Model 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section class="lifestyle-banners">
+            <div class="lifestyle-item" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80&w=1000" alt="Men's Lifestyle">
+                <div class="banner-content">
+                    <h2 class="cinematic-text">The Art of <span style="color: var(--men-accent);">Style</span></h2>
+                    <p>Elegance is not being noticed, it's being remembered.</p>
+                </div>
+            </div>
+            <div class="lifestyle-item" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1505022610485-0249ba5b3675?auto=format&fit=crop&q=80&w=1000" alt="Men's Accessories">
+                <div class="banner-content">
+                    <h2 class="cinematic-text">Timeless <span style="color: var(--men-accent);">Detail</span></h2>
+                    <p>Perfecting every detail of your appearance.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-premium section-padding">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">LUMINA<span>FASHION</span></a>
+                    <p>Redefining luxury shopping through innovation and elegance.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="men-fashion.html">Men's Fashion</a></li>
+                        <li><a href="ladies-fashion.html">Ladies Fashion</a></li>
+                        <li><a href="jewellery.html">Jewellery</a></li>
+                        <li><a href="ladies-cosmetics.html">Cosmetics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Concierge</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <div class="luxury-input">
+                        <input type="email" placeholder="Your Email">
+                        <button style="background: var(--men-accent);"><i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center" style="margin-top: 50px; color: #888888;">
+                <p>&copy; 2026 LUMINA FASHION. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>

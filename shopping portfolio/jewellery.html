@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Jewellery | Lumina Fashion</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="theme-jewel overflow-x-hidden">
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Preloader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="luxury-loader" style="border-top-color: var(--jewel-gold);"></div>
+            <h1 class="loader-text" style="margin-top: 20px; font-weight: 700;">LUMINA<span>FASHION</span></h1>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" style="background-color: var(--jewel-gold);"></div>
+    <div class="cursor-outline" style="border-color: var(--jewel-gold);"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="container">
+            <a href="index.html" class="logo">LUMINA<span>FASHION</span></a>
+            <ul class="nav-links">
+                <li><a href="men-fashion.html">Men</a></li>
+                <li><a href="jewellery.html" class="active">Jewellery</a></li>
+                <li><a href="kids-fashion.html">Kids</a></li>
+                <li><a href="ladies-cosmetics.html">Cosmetics</a></li>
+                <li><a href="ladies-fashion.html">Ladies</a></li>
+                <li><a href="shoes-accessories.html">Accessories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn" id="cart-toggle">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Category Hero -->
+        <section class="next-level-hero" style="height: 70vh;">
+            <div class="hero-video-container">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=2000" alt="Luxury Jewellery" class="hero-fallback">
+                <div class="hero-overlay" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), var(--bg-dark));"></div>
+            </div>
+            <div class="container hero-content text-center">
+                <div class="hero-tag" data-aos="fade-down" style="color: var(--jewel-gold);">Eternal Elegance</div>
+                <h1 class="hero-title cinematic-text" data-aos="zoom-out" data-aos-delay="200">
+                    Luxury <span class="neon-text">Jewellery</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">Golden excellence crafted for the elite.</p>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="premium-grid">
+                    <!-- Product 1 -->
+                    <div class="premium-card shine-effect" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=600" alt="Diamond Cascade Necklace" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--jewel-gold);">Necklaces</span>
+                            <h4>Diamond Cascade Necklace</h4>
+                            <div class="price-row">
+                                <span class="price">$4,500.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--jewel-gold); color: #000;"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="premium-card shine-effect" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600" alt="Celestial Pearl Earrings" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--jewel-gold);">Earrings</span>
+                            <h4>Celestial Pearl Earrings</h4>
+                            <div class="price-row">
+                                <span class="price">$1,200.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--jewel-gold); color: #000;"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="premium-card shine-effect" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=600" alt="Royal Gold Bracelet" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--jewel-gold);">Bracelets</span>
+                            <h4>Royal Gold Bracelet</h4>
+                            <div class="price-row">
+                                <span class="price">$2,800.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--jewel-gold); color: #000;"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="premium-card shine-effect" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1598560917505-59a3ad559071?auto=format&fit=crop&q=80&w=600" alt="Sapphire Dream Ring" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--jewel-gold);">Rings</span>
+                            <h4>Sapphire Dream Ring</h4>
+                            <div class="price-row">
+                                <span class="price">$3,200.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--jewel-gold); color: #000;"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="premium-card shine-effect" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=600" alt="Emerald Elite Watch" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--jewel-gold);">Timepieces</span>
+                            <h4>Emerald Elite Watch</h4>
+                            <div class="price-row">
+                                <span class="price">$5,800.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--jewel-gold); color: #000;"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="premium-card shine-effect" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1599643477877-537ef5278533?auto=format&fit=crop&q=80&w=600" alt="Platinum Love Band" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--jewel-gold);">Rings</span>
+                            <h4>Platinum Love Band</h4>
+                            <div class="price-row">
+                                <span class="price">$1,500.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--jewel-gold); color: #000;"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="premium-card shine-effect" data-aos="fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&q=80&w=600" alt="Ruby Halo Earrings" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--jewel-gold);">Earrings</span>
+                            <h4>Ruby Halo Earrings</h4>
+                            <div class="price-row">
+                                <span class="price">$1,850.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--jewel-gold); color: #000;"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="premium-card shine-effect" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=600" alt="Golden Link Chain" onerror="handleImageError(this)">
+                            <div class="card-actions">
+                                <button class="wish-btn"><i data-lucide="heart"></i></button>
+                                <button><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag" style="color: var(--jewel-gold);">Necklaces</span>
+                            <h4>Golden Link Chain</h4>
+                            <div class="price-row">
+                                <span class="price">$950.00</span>
+                                <button class="add-to-cart neon-btn-s" style="background: var(--jewel-gold); color: #000;"><i data-lucide="plus"></i> Add to Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section class="lifestyle-banners">
+            <div class="lifestyle-item" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=1000" alt="Jewellery Lifestyle">
+                <div class="banner-content">
+                    <h2 class="cinematic-text">Gilded <span style="color: var(--jewel-gold);">Splendor</span></h2>
+                    <p>Wear your luxury with pride and elegance.</p>
+                </div>
+            </div>
+            <div class="lifestyle-item" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=1000" alt="Accessories Detail">
+                <div class="banner-content">
+                    <h2 class="cinematic-text">Radiant <span style="color: var(--jewel-gold);">Beauty</span></h2>
+                    <p>Every piece tells a story of craftsmanship.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-premium section-padding">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">LUMINA<span>FASHION</span></a>
+                    <p>Redefining luxury shopping through innovation and elegance.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="men-fashion.html">Men's Fashion</a></li>
+                        <li><a href="ladies-fashion.html">Ladies Fashion</a></li>
+                        <li><a href="jewellery.html">Jewellery</a></li>
+                        <li><a href="ladies-cosmetics.html">Cosmetics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Concierge</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <div class="luxury-input">
+                        <input type="email" placeholder="Your Email">
+                        <button style="background: var(--jewel-gold); color: #000;"><i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center" style="margin-top: 50px; color: #888888;">
+                <p>&copy; 2026 LUMINA FASHION. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
